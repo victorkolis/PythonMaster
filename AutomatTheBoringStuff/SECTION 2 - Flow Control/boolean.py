@@ -57,9 +57,14 @@ False != False # False
 name = input("What is your name?\n")
 
 # Whenever the condition on if is not compared against anything-
-# it is comparing to True by default
+# it is comparing to True by default for strings. Whenever it-
+# comes to integers the 0 is falsey and anything else is truthy
 
 if name:
     print("Thank you for entering a name.")
 else:
     print("You did not enter a name.")
+
+print(bool(0)) # falsey
+print(bool(1)) # truthy
+print(bool(-1)) # truthy
