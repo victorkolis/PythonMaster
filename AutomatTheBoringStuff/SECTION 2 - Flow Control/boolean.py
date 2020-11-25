@@ -1,11 +1,11 @@
-# flow_control_concepts
+# boolean.py
 
 print(5 > 4)
 print(not 5 > 4)
 
 # Boolean reserved keywords
 
-not
+# not
 True
 False
 
@@ -32,19 +32,34 @@ False != False # False
 # Logical Operators
 
 # Equal to
-==
+# ==
 
 # Not equal to
-!=
+#!=
 
 # Less than
-<
+#<
 
 # Greater than
->
+#>
 
 # Less than or equal to
-<=
+#<=
 
 # Greater than or equal to
->=
+#>=
+
+# Truthy & Falsey values
+# Whenever an empty string is returned, that is considered-
+# a falsey all other states are considered a truthy, spaces
+# and other characters.
+
+name = input("What is your name?\n")
+
+# Whenever the condition on if is not compared against anything-
+# it is comparing to True by default
+
+if name:
+    print("Thank you for entering a name.")
+else:
+    print("You did not enter a name.")
