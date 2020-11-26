@@ -2,6 +2,14 @@
 
 import random
 
+print('''
+
+|  |  /\  |\  | /~~\|\  /|  /\  |\  |
+|--| /__\ | \ ||  __| \/ | /__\ | \ |
+|  |/    \|  \| \__/|    |/    \|  \|
+                                     
+''')
+
 stages = ['''
   +---+
   |   |
@@ -70,7 +78,6 @@ lives = 6
 for _ in range(len(random_word)):
     blank_list += "_"
 
-print(random_word)
 
 while "_" in blank_list and lives > 0:
     print(blank_list)
