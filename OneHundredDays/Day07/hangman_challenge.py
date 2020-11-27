@@ -70,6 +70,7 @@ stages = ['''
 # list to be used for random collection
 colors = ['blue', 'black', 'brown', 'beige', 'birch', 'purple', 'orange', 'white', 'gray', 'green', 'red', 'indigo', 'yellow']
 
+# variables (for better visual search only comment)
 random_word = random.choice(colors)
 blank_list = []
 player_has_already_entered = []
