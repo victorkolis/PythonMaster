@@ -4,10 +4,12 @@
 def div(argument):
     try:
         return 42 / argument
-    except:
+    except ZeroDivisionError:
         return "** Division error"
+    except TypeError:
+        return "** Please enter a number"
 
-print(div(2))
+print(div('a'))
 print(div(5))
 print(div(10))
 print(div(0))

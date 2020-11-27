@@ -8,7 +8,7 @@ clock = pygame.time.Clock()
 from pygame.locals import *
 pygame.init()
 
-pygame.display.set_caption("My Pygame Window")
+pygame.display.set_caption("The Legend Of Kolis")
 
 WINDOW_SIZE = (400, 400)
 
@@ -21,7 +21,10 @@ player_image = pygame.image.load("kolis.png")
 moving_right = False
 moving_left = False
 
-player_location = [50, 50]
+# sets the loaded image position
+player_location = [0, 0]
+
+
 player_y_momentum = 0
 
 # loops infinitely do keep the window up
@@ -44,10 +47,11 @@ while True:
     if moving_left == True:
         player_location[0] -= 4
     
+    # quiting
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
-            sys.exit()
+            sys.exit() # it is a better alternative than breaking or changing the condiiton to False
     if event.type == KEYDOWN:
         if event.key == K_RIGHT:
             moving_right = True
@@ -61,4 +65,4 @@ while True:
             
     
     pygame.display.update() # updates display
-    clock.tick(60) # Controls fps
+    clock.tick(60) # controls fps
