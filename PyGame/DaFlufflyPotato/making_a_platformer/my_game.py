@@ -10,7 +10,8 @@ pygame.init()
 
 pygame.display.set_caption("The Legend Of Kolis")
 
-WINDOW_SIZE = (400, 400)
+# window size width-height
+WINDOW_SIZE = (800, 600)
 
 # create the display
 screen = pygame.display.set_mode(WINDOW_SIZE, 0, 32)
@@ -24,8 +25,12 @@ moving_left = False
 # sets the loaded image position
 player_location = [0, 0]
 
-
+# for gravity's sake
 player_y_momentum = 0
+
+# creating rectangle limits for cllision detection
+player_rect = pygame.Rect(player_location[0], player_location[1], player_image.get_width(), player_image.get_height())
+test_rect = pygame.Rect(100,100, 100, 50)
 
 # loops infinitely do keep the window up
 while True:
@@ -46,6 +51,15 @@ while True:
         player_location[0] += 4
     if moving_left == True:
         player_location[0] -= 4
+    
+    # test collision
+    player_rect.x = player_location[0]
+    player_rect.y = player_location[1]
+    
+    if player_rect.colliderect(test_rect):
+        pygame.draw.rect(screen, (255, 0, 0), test_rect)
+    else:
+        pygame.draw.rect(screen, (255, 250, 250), test_rect)
     
     # quiting
     for event in pygame.event.get():
