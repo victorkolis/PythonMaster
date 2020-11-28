@@ -81,7 +81,7 @@ for _ in range(len(random_word)):
 
 
 while "_" in blank_list and lives > 0:
-    print(blank_list)
+    print(f"\n\n{blank_list}")
     player_input = input("\nGuess a letter: ").lower()
 
 
