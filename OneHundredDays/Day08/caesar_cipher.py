@@ -12,7 +12,7 @@ wanna_continue = 'yes'
 while wanna_continue == 'yes' or wanna_continue == 'y':
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
-    shift = abs(math.trunc(float(input("Type the shift number:\n"))))
+    shift = math.trunc(float(input("Type the shift number:\n")))
     text = list(text)
     text_as_list = text
     shifted_alphabet = list(alphabet)
@@ -24,6 +24,7 @@ while wanna_continue == 'yes' or wanna_continue == 'y':
             for index in range(len(alphabet)):
                 shifted_alphabet[index - shift] = alphabet[index]
         elif direction == 'decode':
+            shift  = -shift 
             for index in range(len(alphabet)):
                 shifted_alphabet[index] = alphabet[index + shift]
     except IndexError:
