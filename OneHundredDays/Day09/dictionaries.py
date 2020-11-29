@@ -17,3 +17,9 @@ print(programming_dictionary)
 # Creating an empty dictionary
 empty_dictionary = {}
 
+# Retrieving info from a dictionary by index
+print(programming_dictionary)
+
+# Loop through the dictionary (retrieve all the data)
+for key in programming_dictionary:
+    print(f'{key}: {programming_dictionary[key]}')
