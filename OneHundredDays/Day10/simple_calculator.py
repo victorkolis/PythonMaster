@@ -50,6 +50,8 @@ def decimal_checker(number):
     else:
         return number
 
+_continue = True
+
 num1 = float(input('\n\n::::: '))
 operation_symbol = input('::::: ')
 num2 = float(input('::::: '))
@@ -57,6 +59,7 @@ num2 = float(input('::::: '))
 function = operations[operation_symbol]
 
 logo()
+
 
 if ".0" in str(num1) and ".0" in str(num2):
     final_logo(str(function(num1, num2)))
