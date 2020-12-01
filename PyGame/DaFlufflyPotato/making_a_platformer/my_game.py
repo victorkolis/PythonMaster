@@ -19,11 +19,12 @@ screen = pygame.display.set_mode(WINDOW_SIZE, 0, 32)
 # loads an image into the screen
 player_image = pygame.image.load("kolis.png")
 
+
 moving_right = False
 moving_left = False
 
 # sets the loaded image position
-player_location = [0, 0]
+player_location = [100, 0]
 
 # for gravity's sake
 player_y_momentum = 0
@@ -58,7 +59,7 @@ while True:
     
     if player_rect.colliderect(test_rect):
         pygame.draw.rect(screen, (255, 0, 0), test_rect)
-    else:
+    else: 
         pygame.draw.rect(screen, (255, 250, 250), test_rect)
     
     # quiting
