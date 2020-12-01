@@ -24,7 +24,7 @@ moving_right = False
 moving_left = False
 
 # sets the loaded image position
-player_location = [0, 0]
+player_location = [100, 0]
 
 # for gravity's sake
 player_y_momentum = 0
