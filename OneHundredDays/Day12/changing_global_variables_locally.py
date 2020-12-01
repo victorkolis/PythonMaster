@@ -13,7 +13,6 @@ function()
 print(global_variable)
 
 # a very good practice
-
 def function():
     new_value = 0
     for iterator in range(9):
