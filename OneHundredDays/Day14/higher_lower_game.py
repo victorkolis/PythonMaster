@@ -1,3 +1,4 @@
+# NOT YET FINISHED
 # higher_lower_game.py
 
 import art
