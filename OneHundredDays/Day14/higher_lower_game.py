@@ -1,5 +1,7 @@
-# NOT YET FINISHED
 # higher_lower_game.py
+# AUTHOR : Victor Kolis
+# This software objective is to figure out which artist's got the most followers on a given SNW
+
 
 import art
 import game_data
@@ -7,59 +9,50 @@ import random
 import subprocess
 
 
-#(01 - Print the logo import the art)#################
 print(art.logo)
-# You're right! Current score: [] current_score += 1
 
-
-#02 - Print the first comparison. Which is a data from the game_data.py
-    # Compare A: Dictionary data Random number
-
-# Generates a random number in order to get a random artist from the game_data.data dicionary
 
 def random_index():
     return random.randint(0, len(game_data.data) - 1)
 
+# Clears the previous game/guess and reprints the logo
+def game_reloader():
+    subprocess.call('clear')
+    print(art.logo)
 
+game_reloader()
 score = 0
-on = True
+game_is_on = True
 
-while on:
-    artist_a = game_data.data[random_index()]
+# Gets an artist at random from the game_data list
+artist_a = game_data.data[random_index()]
+
+while game_is_on:
+    
     print(f"Compare A: {artist_a['name']}, {artist_a['description']}, from {artist_a['country']}.")
-
+    
+    # Prints vs ascii
     print(art.vs)
+    
+    # Gets an artist at random from the game_data list and later compares to to the artist_a in order not to repeat the artists picked out
     artist_b = game_data.data[random_index()]
     if artist_a == artist_b:
         artist_b = game_data.data[random_index() + 1]
     print(f"Against B: {artist_b['name']}, {artist_b['description']}, from {artist_a['country']}.")
     
     
-    player_guess = input('Who has more followers? Type \'A\' or \'B\': ')
+    player_guess = input('Who has more followers? Type \'A\' or \'B\': ').upper()
     
-    if artist_a[1] > artist_b[1]:
-        
-        
-    break
-
-
-
-
-
-
-#03 - Print the VS (import the art)
-
+    if artist_a['follower_count'] > artist_b['follower_count']:
+        greater_artist = 'A'
+    else:
+        greater_artist = 'B'
+        artist_a = artist_b
     
-#04 - Print the second comparison. Which is another data from the game_data.py
-    # Against B: Dictionary data - Random number
-
-
-#05 - Input:
-    # Who has more followers? Type 'A' or 'B':
-    # If the guess is wrong print: Sorry, that's wrong. Final score: 0
-    # If the guess is correct clean the screen and start  afresh with the previously compared
-
-# Clears the previous game/guess and reprints the logo
-def game_reloader():
-    subprocess.call('clear')
-    print(art.logo)
+    if player_guess == greater_artist:
+        score += 1
+        game_reloader()
+        print(f'You\'re right! Current score: {score}')
+    else:
+        print(f'Sorry, that\'s wrong. Final score: {score}')
+        break
