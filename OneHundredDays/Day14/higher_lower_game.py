@@ -1,3 +1,4 @@
+# NOT YET FINISHED
 # higher_lower_game.py
 
 import art
@@ -20,7 +21,7 @@ def random_index():
     return random.randint(0, len(game_data.data) - 1)
 
 
-
+score = 0
 on = True
 
 while on:
@@ -32,6 +33,13 @@ while on:
     if artist_a == artist_b:
         artist_b = game_data.data[random_index() + 1]
     print(f"Against B: {artist_b['name']}, {artist_b['description']}, from {artist_a['country']}.")
+    
+    
+    player_guess = input('Who has more followers? Type \'A\' or \'B\': ')
+    
+    if artist_a[1] > artist_b[1]:
+        
+        
     break
 
 
