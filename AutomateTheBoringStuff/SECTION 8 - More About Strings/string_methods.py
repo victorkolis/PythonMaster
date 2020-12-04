@@ -43,3 +43,28 @@ print(string[1].isspace())
 print(string[0].isdecimal())
 print(string[5].istitle())
 
+# startswith() & endswith()
+string = string.startswith('1')
+print(string)
+
+string = 'Victor Kolis'
+string = string.endswith('B')
+print(string)
+
+# join()
+animals = ['cats', 'rats', 'tigers', 'rhinoceros']
+string = ', '.join(animals)
+print(string)
+
+# split()
+list_of_words = 'This is going to become a list of words'
+list_of_words = list_of_words.split()
+print(list_of_words)
+''' The split method can have other spliting arguments passed in the paramether. '''
+
+# split(some other argument)
+list_of_words = 'This is going to become a list of words'
+list_of_words = list_of_words.split('o')
+print(list_of_words)
+
+# ljust() & rjust()
