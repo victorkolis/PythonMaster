@@ -67,4 +67,46 @@ list_of_words = 'This is going to become a list of words'
 list_of_words = list_of_words.split('o')
 print(list_of_words)
 
-# ljust() & rjust()
+# ljust() & rjust() - inserts a given amount of characters to the right or left of a string
+''' The way it works is: if a given string is 5 characters long:
+e.g.:
+
+string = 'hello'
+string = string.rjust(10, '*')
+print(string)
+
+>>> *****hello
+
+the 'string' plus the given amount of characters are
+concatenated to make that string(value) a 10 character long string
+
+no second argument automatically pushes spaces
+'''
+
+string = 'hi'
+string = string.ljust(4, '*').rjust(6, '*') # can be chained or individual
+print(string)
+
+# center()
+string = 'Kolis'
+string = string.center(15, '=')
+print(string)
+
+
+# strip()
+string = '     Strip     '
+string = string.strip() # removes spaces on either side
+print(string)
+
+# lstrip, rstrip - remove spaces on a given side l-left r-right
+
+# striping given letters words from a string on either side not in the middle
+string = 'SpamSpamSpamSpamSpamSpamSpamPlastic Spam BottleSpamSpamSpamSpamSpamSpamSpam'
+string = string.strip('Spam')
+print(string)
+
+
+# replace
+string = 'Victor Kolis'
+string = string.replace('o', '0').replace('i', '1').replace('s', '5')
+print(string)
