@@ -16,8 +16,8 @@ for letter in string:
 print('\n')
 # For loop in a list
 for index in range(len(_list)):
-        _list = list(_list[index])
-        print(_list)
+    _list = list(_list[index])
+    print(_list)
 
 # Lists use memory reference
 vowels = ['A', 'E', 'I', 'O', 'U']

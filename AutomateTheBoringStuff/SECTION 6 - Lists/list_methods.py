@@ -6,7 +6,8 @@ print(greeting.index('heyas'))
 
 # append
 animals = ['eagle', 'lion', 'ox', 'snake']
-animals.append('Moose')
+animals.append('moose')
+animals += ['aardvark']
 print(animals)
 
 # insert
