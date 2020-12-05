@@ -20,4 +20,5 @@ while True:
             pygame.quit()
             sys.exit()
     pygame.display.update()
-    clock.tick(60) # Controls fps
+    # Controls fps
+    clock.tick(60)
