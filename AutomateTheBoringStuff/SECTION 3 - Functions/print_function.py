@@ -6,8 +6,8 @@ print("Hello")
 print("World!")
 
 # Removing the newline (changing the ending of the print() function)
-print("Hello", end= ' ')
+print("Hello", end=' ')
 print("World!")
 
 # Adding a separator
-print("A", "B", "C", "D", "E", "F", "G", sep = "# ")
+print("A", "B", "C", "D", "E", "F", "G", sep="# ")

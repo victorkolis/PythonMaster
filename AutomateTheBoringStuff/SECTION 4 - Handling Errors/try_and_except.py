@@ -9,6 +9,7 @@ def div(argument):
     except TypeError:
         return "** Please enter a number"
 
+
 print(div('a'))
 print(div(5))
 print(div(10))
