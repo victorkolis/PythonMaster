@@ -2,7 +2,7 @@
 
 age = int(input("What is your current age?'\n"))
 age_verifier = 90
-if(age < age_verifier):
+if age < age_verifier:
     age_verifier -= age
     days = age_verifier * 365
     weeks = age_verifier * 52
