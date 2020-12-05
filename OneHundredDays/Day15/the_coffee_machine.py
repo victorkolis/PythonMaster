@@ -5,4 +5,9 @@ while True:
     if order == 'off':
         break
     elif order == 'report':
-        print(items.MENU)
+        resources = list(items.resources.items())
+
+        for resource in resources:
+            resource_name, resource_quantity = resource
+            if
+            print(f'{resource_name}: {resource_quantity} ')
