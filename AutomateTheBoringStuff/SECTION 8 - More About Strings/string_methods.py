@@ -31,10 +31,19 @@ print(string)
 
 # More on the 'is' methods
 string = 'VictorKolis26MarriedComputerScientist'
-print(string.isalpha())  # Alphabetical only
-print(string.isalnum()) # Alphabetical or numerical only (spaces and others are not considered)
-print(string.isdecimal()) # Numerical only
-print(string.isspace()) # Spaces only
+# Alphabetical only
+print(string.isalpha())
+
+# Alphabetical or numerical only (spaces and others are not considered)
+print(string.isalnum())
+
+# Numerical only
+print(string.isdecimal())
+
+# Spaces only
+print(string.isspace())
+
+# Titles only: 'This Is A Title Like String'
 print(string.istitle())
 
 # Checking on indexes
