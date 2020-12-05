@@ -6,7 +6,7 @@ while spam < 5:
     spam += 1
 
 # while runs until a certain need is fulfilled until then the code can and-
-# whill execute
+# will execute
 
 name = ''
 while name != "your name":

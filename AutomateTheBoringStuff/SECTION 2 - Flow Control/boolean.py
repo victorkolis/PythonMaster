@@ -12,8 +12,8 @@ False
 # Truth table
 
 # And
-True  and True  # True
-True  and False # False
+True and True  # True
+True and False # False
 False and True  # False
 False and False # False
 
@@ -24,8 +24,8 @@ False or True  # True
 False or False # False
 
 # XOR (Exclusive or)
-True  != True  # False
-True  != False # True
+True != True  # False
+True != False # True
 False != True  # True
 False != False # False
 
