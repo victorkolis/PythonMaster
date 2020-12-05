@@ -16,7 +16,7 @@ print(spam[1:4])
 print(spam[2:])
 print(spam[:2])
 
-# chaging item in a list
+# changing item in a list
 print(spam)
 
 spam[0] = 'Z'

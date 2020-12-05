@@ -12,7 +12,7 @@ for letter in message:
 # Std print
 print(count,end='\n\n')
 
-# Neatier way of printing
+# Neater way of printing
 pprint.pprint(count)
 
 # If some return is needed/wanted

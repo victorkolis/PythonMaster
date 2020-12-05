@@ -3,8 +3,8 @@
 # There are two ways of importing a module/built-in function
 
 # random
-import random, sys
-
+import random
+import sys
 
 # from random import * -> not so good for readability
 

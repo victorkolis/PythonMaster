@@ -1,7 +1,13 @@
 # global_and_local_scopes.py
 
-a = 1 # global variable
+# global variable
+a = 1
+
+
 def eggs():
-    spam = 4 # local variable
+    # local variable
+    spam = 4
     print(spam)
+
+
 eggs()

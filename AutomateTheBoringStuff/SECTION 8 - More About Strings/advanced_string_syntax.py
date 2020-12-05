@@ -1,6 +1,6 @@
 # advanced_string_syntax.py
 
-'Single quote string'
+single_quote = 'Single quote string'
 "Double quote string"
 ''' Triple single quotes string'''
 """ Triple double quotes string """

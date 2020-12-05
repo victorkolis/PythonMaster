@@ -2,7 +2,6 @@
 
 import random as get
 
-
 name = input("What is your name?\n")
 print(f"Hi {name}, I am thinking of a number betwixt 1 - 10,")
 
