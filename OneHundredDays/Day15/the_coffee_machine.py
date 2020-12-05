@@ -9,5 +9,9 @@ while True:
 
         for resource in resources:
             resource_name, resource_quantity = resource
-            if
-            print(f'{resource_name}: {resource_quantity} ')
+            if resource_name == 'coffee':
+                print(f'{resource_name.title()}: {resource_quantity}g ')
+            else:
+                print(f'{resource_name.title()}: {resource_quantity}ml ')
+    elif order == 'espresso':
+        if items.resources['water'] < items.resources['water']:
