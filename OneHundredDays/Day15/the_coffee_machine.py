@@ -45,8 +45,10 @@ while True:
             print(f"Here is your {order} ☕️ enjoy!!")
 
             # Subtract the resources in order to emulate a real coffee machine using its internal resources.
-            for resource in items.MENU.get('espresso').values():
-                item = resource
-                
+            # And also add to the money the machine has
+            items.resources['money'] += items.MENU[order]['cost']
+            for resource in items.MENU[order]['ingredients']:
+                items.resources[resource] -= items.MENU[order]['ingredients'][resource]
+
         else:
             print("Sorry, that's not enough money. Money refunded.")
