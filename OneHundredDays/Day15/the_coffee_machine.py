@@ -47,6 +47,6 @@ while True:
             # Subtract the resources in order to emulate a real coffee machine using its internal resources.
             for resource in items.MENU.get('espresso').values():
                 item = resource
-                print(f"{item['water']}")
+                
         else:
             print("Sorry, that's not enough money. Money refunded.")
