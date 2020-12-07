@@ -3,6 +3,8 @@ import sys
 from pygame.locals import *
 
 pygame.init()
+
+# The display surface
 SURFACE = pygame.display.set_mode((400, 300))
 pygame.display.set_caption('Hello World!')
 while True:
