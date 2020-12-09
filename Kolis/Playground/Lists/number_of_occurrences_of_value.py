@@ -28,7 +28,7 @@ text = list(text)
 occurrencies = {}
 for letter in text:
     
-    if letter not in string.ascii_letters:
+    if letter not in string.ascii_letters or letter not in string.ascii_letters:
         continue
     
     elif letter not in occurrencies.keys():
