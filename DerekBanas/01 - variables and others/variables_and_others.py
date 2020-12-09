@@ -50,10 +50,10 @@ print("Cast 4", type(ord('a')))
 print("Cast 5", type(float(2)))
 
 # Case sensitive
-
 a = 3
 A = 5
 
+# f string
 num1 = '1'
 num2 = '2'
 print(f'{num1} + {num2} = ', int(num1) + int(num2))
