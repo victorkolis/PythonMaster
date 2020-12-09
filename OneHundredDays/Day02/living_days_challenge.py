@@ -1,7 +1,7 @@
 # This software objective is to print one's got left if they were to live till their 90's
 
-age = int(input("What is your current age?'\n"))
-age_verifier = 90
+age = int(input("What is your current age?\n"))
+age_verifier = 26
 if age < age_verifier:
     age_verifier -= age
     days = age_verifier * 365
