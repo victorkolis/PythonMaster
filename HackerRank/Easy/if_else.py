@@ -17,12 +17,12 @@ Output Format:
 Print Weird if the number is weird. Otherwise, print Not Weird.
 """
 
-n = int(input(''))
+n = int(input('Enter a number: '))
 
 # All Weirds
 if not n % 2 == 0:
     print('Weird')
-elif n % 2 == 0 and n > 5 <= 20:
+elif n % 2 == 0 and 5 < n <= 20:
     print('Weird')
 
 # All Not Weirds
