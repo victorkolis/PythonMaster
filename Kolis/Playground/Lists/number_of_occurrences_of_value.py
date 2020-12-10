@@ -25,13 +25,13 @@ text = input('Type in a text: ').upper()
 
 text = list(text)
 
-occurrencies = {}
+occurrences = {}
 for letter in text:
     
     if letter not in string.ascii_letters or letter not in string.ascii_letters:
         continue
     
-    elif letter not in occurrencies.keys():
-        occurrencies[letter] = text.count(letter)
+    elif letter not in occurrences.keys():
+        occurrences[letter] = text.count(letter)
 
-pprint.pprint(occurrencies)
+pprint.pprint(occurrences)
