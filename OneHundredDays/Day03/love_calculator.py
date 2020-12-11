@@ -5,8 +5,10 @@ name1 = input("What is your name? \n").lower()
 name2 = input("What is their name? \n").lower()
 names_concatenated = name1 + name2
 
-true = names_concatenated.count("t") + names_concatenated.count("r") + names_concatenated.count("u") + names_concatenated.count("e")
-love = names_concatenated.count("l") + names_concatenated.count("o") + names_concatenated.count("v") + names_concatenated.count("e")
+true = names_concatenated.count("t") + names_concatenated.count("r") + names_concatenated.count("u") +\
+       names_concatenated.count("e")
+love = names_concatenated.count("l") + names_concatenated.count("o") + names_concatenated.count("v") +\
+       names_concatenated.count("e")
 
 score = str(true) + str(love)
 

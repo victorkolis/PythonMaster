@@ -34,11 +34,13 @@ if choice == "left":
         choice = input("Which door... red, blue, green?\n").lower()
         if choice == "green":
             print("You Win!!!")
+
+        elif choice == "red":
+            print("Flown away by a big bird.")
         else:
-            print("Game Over")
+            print("Eaten by crocodiles.")
     elif choice == "swim":
-        print("Eaten by trout\nGame over!")
-    else:
-        print("Game Over")
+        print("Eaten by trout")
 else:
-    print("Game Over")
+    print('You fell off a cliff.')
+print("Game Over.")
