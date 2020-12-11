@@ -2,7 +2,7 @@
 
 import random
 
-# random.choice(alist) will give me a random item from a given list
+# random.choice(a_list) will give me a random item from a given list
 
 programming_languages = ["Python", "C/C++", "Java", "Pearl", "Lisp"]
 
