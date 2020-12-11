@@ -10,19 +10,19 @@ string = string.upper()
 print(string)
 
 # islower() and isupper() - boolean
-isStringLower = string.islower()
-isStringUpper = string.isupper()
-print(isStringLower)
-print(isStringUpper)
+is_string_lower = string.islower()
+is_string_upper = string.isupper()
+print(is_string_lower)
+print(is_string_upper)
 ''' If the character contained in the string being tested
 does not have a alphabetical type either the upper or lower methods will return
 False '''
 
 string = '2, %'
-isStringLower = string.islower()
-isStringUpper = string.isupper()
-print(isStringLower)
-print(isStringUpper)
+is_string_lower = string.islower()
+is_string_upper = string.isupper()
+print(is_string_lower)
+print(is_string_upper)
 
 # Chaining methods
 string = 'abc'
