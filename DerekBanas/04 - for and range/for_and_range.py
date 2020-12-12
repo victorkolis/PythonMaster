@@ -27,3 +27,8 @@ for number in range(2, 5):
 print('\nThird method: ')
 for number in range(2, 10, 2):
     print(f'number = {number}')
+
+# 4.
+vowels = ['A', 'E', 'I', 'O', 'U', 'Y']
+for vowel in vowels:
+    print(vowel)
