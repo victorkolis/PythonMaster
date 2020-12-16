@@ -12,7 +12,7 @@ menu_principal.title("Hello World")
 menu_principal.geometry("400x400+500+300")
 
 # Define is resizable or not
-menu_principal.resizable(True, False)
+menu_principal.resizable(False, False)
 
 # Infinite loop
 menu_principal.mainloop()
