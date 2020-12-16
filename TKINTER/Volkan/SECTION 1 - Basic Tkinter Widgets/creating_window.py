@@ -8,6 +8,7 @@ root = Tk()
 root.geometry("400x100")
 
 # Creating buttons
+# Seeing the difference betwixt ttk.Button X Button
 click_me_button1 = Button(root, text='Click Me')
 click_me_button2 = ttk.Button(root, text='Click Me')
 
