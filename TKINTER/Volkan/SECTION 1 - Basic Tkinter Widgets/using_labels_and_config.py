@@ -12,7 +12,7 @@ root.title("USING LABELS")
 
 # Creating labels
 label_1 = Label(root, text='THIS IS A LABEL')
-label_2 = Label(root, text='THIS IS A LABEL FOR BREAK DEMONSTRATION PURPOSES ONLY AND NOTHING MORE.')
+label_2 = Label(root, text='THIS IS A LABEL FOR BREAK/WRAPPING DEMONSTRATION PURPOSES ONLY AND NOTHING MORE.')
 
 # Text alignment
 label_1.config(justify=RIGHT)
