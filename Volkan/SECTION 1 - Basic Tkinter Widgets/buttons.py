@@ -20,5 +20,5 @@ button2 = Button(root, text='Click Me', command=change_background)
 button2.pack()
 button2['state'] = 'disabled'
 
-root.geometry('350x300')
+root.geometry('350x300+300+0')
 root.mainloop()
