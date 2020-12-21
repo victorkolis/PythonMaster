@@ -6,7 +6,18 @@ Assume the empty string is an isogram. Ignore letter case.
 
 
 def is_isogram(string):
+    string = string.lower()
+    value = True
+    for letter in string:
+        if letter == '':
+            value = True
 
+        elif string.count(letter) > 1:
+            return False
+
+        else:
+            value = False
+    return value
 
 
 words = ['Dermatoglyphics', 'isogram', 'aba', 'moOse', 'isIsogram', '']
