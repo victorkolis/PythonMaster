@@ -16,7 +16,7 @@ def is_isogram(string):
             return False
 
         else:
-            value = False
+            value = True
     return value
 
 
