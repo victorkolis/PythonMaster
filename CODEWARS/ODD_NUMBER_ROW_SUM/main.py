@@ -1,2 +1,5 @@
 def row_sum_odd_numbers(n):
-    pass
+    return n ** 3
+
+
+print(row_sum_odd_numbers(2))
