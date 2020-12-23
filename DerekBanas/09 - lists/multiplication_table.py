@@ -1,0 +1,2 @@
+multiplication_table = []
+
