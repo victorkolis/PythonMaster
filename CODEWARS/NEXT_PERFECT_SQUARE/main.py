@@ -10,7 +10,7 @@ def find_next_square(sq):
 
         return sq
     else:
-        return -1
+        return - 1
 
 
 print(find_next_square(144))
