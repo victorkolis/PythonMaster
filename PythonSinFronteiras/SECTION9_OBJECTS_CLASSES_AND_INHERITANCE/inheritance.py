@@ -7,12 +7,11 @@ class User:
         print('Hi, my name is:', self.name, self.nickname)
 
 
-user = User('Victor', 'Kolis')
-user.greeting()
+class Admin(User):
+    def super_greeting(self):
+        print('HOLA!! ME LLAMO', self.name, 'Y SOY ADMINISTRADOR')
 
-# Deleting
-# Deleting an attribute
-del user.name
 
-# Deleting
-del user
+admin = Admin('VICTOR', 'KOLIS')
+admin.greeting()
+admin.super_greeting()
