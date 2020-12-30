@@ -8,8 +8,10 @@ def fibonacci(f_range):
     else:
         result = fibonacci(f_range - 1) + fibonacci(f_range - 2)
         return result
-    pass
 
 
+fibs = []
 for _ in range(10):
-    print(fibonacci(_))
+    fibs += [fibonacci(_)]
+
+print(fibs)
