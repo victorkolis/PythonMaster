@@ -2,22 +2,28 @@ from turtle import Turtle
 from turtle import Screen
 
 screen = Screen()
+WIDTH, HEIGHT = 800, 600
+screen.setup(width=WIDTH, height=HEIGHT)
+chosen_turtle = screen.textinput(title='Turtles', prompt='Choose your ninja')
 
-leonardo = Turtle()
+leonardo = Turtle(shape='turtle')
 leonardo.color('red')
-leonardo.shape('turtle')
+leonardo.penup()
+leonardo.goto(-300, 250)
 
+raphael = Turtle(shape='turtle')
+raphael.color('blue')
+raphael.penup()
+raphael.goto(-300, 100)
 
-raphael = Turtle()
-leonardo.color('blue')
-leonardo.shape('turtle')
+michelangelo = Turtle(shape='turtle')
+michelangelo.color('orange')
+michelangelo.penup()
+michelangelo.goto(-300, -50)
 
-michelangelo = Turtle()
-leonardo.color('orange')
-leonardo.shape('turtle')
-
-donatello = Turtle()
-leonardo.color('purple')
-leonardo.shape('turtle')
+donatello = Turtle(shape='turtle')
+donatello.color('purple')
+donatello.penup()
+donatello.goto(-300, -200)
 
 screen.exitonclick()
