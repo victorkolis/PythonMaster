@@ -6,3 +6,7 @@ text_file.close()
 
 read_file = open('main.txt', 'r')
 print(read_file.read())
+
+# Rewriting/overwriting a file
+rewrite = open('rewrite_me.txt', 'w')
+rewrite.write('This text has been rewritten')
