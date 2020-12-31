@@ -20,4 +20,4 @@ def make_readable(time_in_seconds):
     return '{}:{}:{}'.format(hours, minutes, seconds)
 
 
-print(make_readable(0))
+print(make_readable(500))
