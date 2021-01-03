@@ -29,15 +29,16 @@ class Square:
             print("You've tried to enter a value other than numbers so the width is now set to 0.")
             self.__width = 0
 
+    def get_area(self):
+        return self.width * self.height
+
 
 def main():
-    square = Square(width=100, height=20)
-    print(square.height)
-    print(square.width)
-    square.height = 'a'
-    square.width = 'b'
-    print(square.height)
-    print(square.width)
+    print('Welcome to the Square Area Calculator program')
+    square = Square()
+    square.height = int(input('Enter the square height: '))
+    square.width = int(input('Enter the square width: '))
+    print(square.get_area())
 
 
 main()
