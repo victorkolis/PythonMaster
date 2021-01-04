@@ -7,6 +7,9 @@ class Snake:
         self.segments = []
         self.create_snake()
 
+        # Snake directions
+        self.UP, self.DOWN, self.LEFT, self.RIGHT = 90, 270, 180, 0
+
     def create_snake(self):
         screen_x_position = 0
         screen_y_position = 0
@@ -26,3 +29,19 @@ class Snake:
             new_y = self.segments[index - 1].ycor()
             self.segments[index].goto(new_x, new_y)
         self.segments[0].forward(20)
+
+    def up(self):
+        if not self.segments[0].heading() == self.DOWN:
+            self.segments[0].setheading(self.UP)
+
+    def down(self):
+        if not self.segments[0].heading() == self.UP:
+            self.segments[0].setheading(self.DOWN)
+
+    def left(self):
+        if not self.segments[0].heading() == self.RIGHT:
+            self.segments[0].setheading(self.LEFT)
+
+    def right(self):
+        if not self.segments[0].heading() == self.LEFT:
+            self.segments[0].setheading(self.RIGHT)
