@@ -1,17 +1,24 @@
 #!/usr/local/bin/python3
 from math import pi
 import sys
+import errno
 
 
 def circle(radius):
     return round(pi * int(radius) ** 2, 2)
 
 
+def help():
+    print('''\
+            It's necessary inform the circle radius.
+            Syntax: {} <radius>'''.format(sys.argv[0]))
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print('''\
-        It's necessary inform the circle radius.
-        Syntax: {} <radius>'''.format(sys.argv[0]))
+        help()
+        sys.exit(1)
+    #   sys.exit(errno.EPERM), errno.EPERM = 1
 
     try:
         radius_entered = sys.argv[1]
