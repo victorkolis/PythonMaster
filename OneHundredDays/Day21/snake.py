@@ -15,7 +15,6 @@ class Snake:
         screen_y_position = 0
         for _ in range(3):
             snake = Turtle()
-            snake.speed(1)
             snake.penup()
             snake.color('white')
             snake.shape('square')
@@ -23,6 +22,7 @@ class Snake:
             screen_x_position -= 20
             self.segments += [snake]
 
+    # Making the snake move forwards automatically
     def move(self):
         for index in range(len(self.segments) - 1, 0, -1):
             new_x = self.segments[index - 1].xcor()
@@ -30,6 +30,7 @@ class Snake:
             self.segments[index].goto(new_x, new_y)
         self.segments[0].forward(20)
 
+    # Controlling the snake
     def up(self):
         if not self.segments[0].heading() == self.DOWN:
             self.segments[0].setheading(self.UP)

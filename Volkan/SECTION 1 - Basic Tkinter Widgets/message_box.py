@@ -12,7 +12,18 @@ def delete():
 
 
 def info():
-    messagebox.showinfo('Success', 'Well done')
+    messagebox.showinfo('Success', 'by Code Future Invent')
+    mbox = messagebox.askyesnocancel('Delete', 'Save document?')
+
+    if mbox:
+        print('Saved')
+        root.destroy()
+
+    elif not mbox:
+        print('Document not saved')
+        root.destroy()
+    else:
+        print('Canceled')
 
 
 root = Tk()
