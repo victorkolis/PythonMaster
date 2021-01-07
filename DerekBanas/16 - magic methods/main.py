@@ -15,7 +15,6 @@ class Time:
         if self.hour > 23:
             self.hour -= 24
 
-
     def __str__(self):
         return f'{self.hour}:{self.minute:02d}:{self.second:02}'
 
@@ -44,10 +43,12 @@ class Time:
 
         return new_time
 
+
 def main():
     time_1 = Time(32, 20, 30)
     print(time_1)
     time_2 = Time(1, 30, 20)
     print(time_1 + time_2)
+
 
 main()
