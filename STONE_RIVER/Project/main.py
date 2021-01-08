@@ -1,6 +1,6 @@
 import statistics
 
-administrators = {'Victor': '1q2w3e4R'}
+administrators = {'Victor': '1q2w3e4R', 'Isaac':'ZSXcfv!#@$#%534231'}
 
 
 def main():
@@ -25,17 +25,18 @@ def main():
     elif action == '4':
         pass
     else:
-        print('No valid option entered')
+        print('Invalid option!')
 
 
 login = input('Username: ')
 password = input('Password: ')
+access_message = 'Wrong password or user does not exist'
 
 if login in administrators:
     if administrators[login] == password:
         main()
     else:
-        print('Wrong password')
+        print(access_message)
 
 else:
-    print('User does not exist!')
+    print(access_message)
