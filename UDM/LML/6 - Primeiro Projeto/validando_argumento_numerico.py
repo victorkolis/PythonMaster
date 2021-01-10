@@ -1,7 +1,6 @@
 #!/usr/local/bin/python3
 from math import pi
 import sys
-# import errno
 
 
 def circle(radius):
@@ -19,12 +18,15 @@ if __name__ == '__main__':
         help()
         sys.exit(1)
     #   sys.exit(errno.EPERM), errno.EPERM = 1
+    elif not sys.argv[1]:
+        print('The radius must be a numeric value')
 
-    try:
-        radius_entered = sys.argv[1]
-        circle_area = circle(radius_entered)
-        print('The area of the circle is {}'.format(circle_area))
-    except ValueError:
-        print('''This is not a number.''')
-    except IndexError:
-        pass
+    else:
+        try:
+            radius_entered = sys.argv[1]
+            circle_area = circle(radius_entered)
+            print('The area of the circle is {}'.format(circle_area))
+        except ValueError:
+            print('''This is not a number.''')
+        except IndexError:
+            pass
