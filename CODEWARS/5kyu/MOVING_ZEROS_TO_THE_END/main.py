@@ -1,6 +1,6 @@
 def move_zeros(array):
     new_array = []
-    counter = 0
+    zeros_found = 0
     for element in array:
         if element is False:
             new_array += [element]
@@ -9,9 +9,9 @@ def move_zeros(array):
             new_array += [element]
 
         else:
-            counter += 1
+            zeros_found += 1
 
-    for _ in range(counter):
+    for _ in range(zeros_found):
         new_array += [0]
 
     return new_array
