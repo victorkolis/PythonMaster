@@ -23,6 +23,9 @@ def labels():   # Setting the labels
     label_3 = Label(root, text='IPADY-TAKE-THE-WHOLE-SCREEN LABEL')
     label_3.pack(ipady=10, fill='x')
 
+    label_4 = Label(root, text='EXPANDED LABEL')
+    label_4.pack(fill='y', expand=True)
+
 
 labels()
 root.mainloop()
