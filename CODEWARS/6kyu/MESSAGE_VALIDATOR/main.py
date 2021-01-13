@@ -6,6 +6,7 @@ def is_a_valid_message(message):
         return False
 
     else:
+        # NOT YET FINISHED
         pass
 
 
