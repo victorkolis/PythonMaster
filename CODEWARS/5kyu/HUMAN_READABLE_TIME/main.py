@@ -3,7 +3,7 @@ def make_readable(time_in_seconds):
     minutes = 0
     seconds = time_in_seconds
 
-    for second in range(time_in_seconds):
+    for _ in range(time_in_seconds):
         if seconds > 59:
             seconds -= 60
             minutes += 1
@@ -20,4 +20,4 @@ def make_readable(time_in_seconds):
     return '{}:{}:{}'.format(hours, minutes, seconds)
 
 
-print(make_readable(500))
+print(make_readable(86400))
