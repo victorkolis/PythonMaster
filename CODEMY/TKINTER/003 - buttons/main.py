@@ -17,18 +17,19 @@ class App:
         # Icon
         icon = Image('photo', file='icon.gif')
         self.root.iconphoto(True, icon)
+
         # Buttons style
         self.style = ttk.Style()
         self.style.theme_use('alt')
         self.style.configure('TButton', font=('American typewriter', 14), background='#232323', foreground='white')
         self.style.map('TButton',
-                       background=[('active', '#ff0000'), ('disabled', '#f0f0f0')])
+                       background=[('active', '#00aa00'), ('disabled', '#f0f0f0')])
 
         # Buttons
-        self.button_1 = ttk.Button(self.root, text='click me', command=self.show_me_pi)
+        self.button_1 = ttk.Button(self.root, text='show me π', command=self.show_me_pi)
         self.button_1.pack()
 
-        self.button_2 = ttk.Button(self.root, text='click me', state='disabled')
+        self.button_2 = ttk.Button(self.root, text='disabled', state='disabled')
         self.button_2.pack()
 
         self.root.mainloop()
