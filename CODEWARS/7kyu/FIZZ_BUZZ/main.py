@@ -11,3 +11,6 @@ def fizzbuzz(n: int) -> str and int:
         else:
             fizzbuzz_list += [number]
     return fizzbuzz_list
+
+
+print(fizzbuzz(100))
