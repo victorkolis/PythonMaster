@@ -6,6 +6,10 @@ def alphabetic_pairs(string: str, shift: int) -> list:
     if len(string) == 2:
         string = list(string)
         string[0], string[1] = string[1], string[0]
+    elif len(string) % 2 != 0:
+        string = list(string)
+        string.pop(len(string) - 1)
+
     counter = 0
     alphabet_first_half = list(string[0:len(string) // 2])
     alphabet_second_half = list(string[len(string) // 2:len(string)])
@@ -28,4 +32,7 @@ def alphabetic_pairs(string: str, shift: int) -> list:
     return pairs
 
 
-print(alphabetic_pairs('1234567890', 25))
+print(alphabetic_pairs('CASEsensitive', 4))
+
+
+# RETIRED KATA, NEEDS IMPROVEMENT
