@@ -22,8 +22,7 @@ class App:
         self.style = ttk.Style()
         self.style.theme_use('alt')
         self.style.configure('TButton', font=('American typewriter', 14), background='#232323', foreground='white')
-        self.style.map('TButton',
-                       background=[('active', '#00aa00'), ('disabled', '#f0f0f0')])
+        self.style.map('TButton', background=[('active', '#00aa00'), ('disabled', '#f0f0f0')])
 
         # Buttons
         self.button_1 = ttk.Button(self.root, text='show me π', command=self.show_me_pi)
