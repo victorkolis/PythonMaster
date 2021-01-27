@@ -14,4 +14,4 @@ def simple_parity(string):
     return new_string
 
 
-print(simple_parity('ABCD'))
+print(simple_parity('ABCEFG'))
