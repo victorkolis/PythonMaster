@@ -6,6 +6,37 @@
 
 
 def unique_in_order(iterable):
-	for element in iterable:
-		if element == iterable.
-	pass
+	if len(iterable) == 1:
+		return [iterable]
+	elif len(iterable) == 2:
+		unique = set()
+		for element in iterable:
+			unique.add(element)
+		return list(unique)
+	unique = []
+	for index in range(len(iterable)):
+		try:
+			if iterable[index] != iterable[index + 1]:
+				unique += [iterable[index]]
+		except IndexError:
+			pass
+	try:
+		if iterable[len(iterable) - 1] != unique[len(unique) - 1]:
+			unique += [iterable[len(iterable) - 1]]
+	except:
+		pass
+	return unique
+			
+			
+print(unique_in_order('AA'))
+
+# SOLUTION BY kmeshu09
+
+#def unique_in_order(iterable):
+#	result = []
+#	prev = None
+#	for char in iterable[0:]:
+#		if char != prev:
+#			result.append(char)
+#			prev = char
+#	return result
