@@ -19,9 +19,11 @@ def alphabet_war(fight):
 	right_score = 0
 	
 	for letter in fight:
-		if letter in left_score:
+		if letter in left_side:
 			try:
 				left_score += left_side[letter]
+			except TypeError:
+				pass
 			except TypeError:
 				pass
 		else:
@@ -43,4 +45,3 @@ def alphabet_war(fight):
 
 
 print(alphabet_war('z'))
-	
