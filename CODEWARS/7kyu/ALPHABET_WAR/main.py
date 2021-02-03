@@ -22,13 +22,15 @@ def alphabet_war(fight):
 		if letter in left_side:
 			try:
 				left_score += left_side[letter]
-			except TypeError:
+			except KeyError:
 				pass
 			except TypeError:
 				pass
 		else:
 			try:
 				right_score += right_side[letter]
+			except KeyError:
+				pass
 			except TypeError:
 				pass
 
