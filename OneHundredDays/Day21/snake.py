@@ -21,6 +21,7 @@ class Snake:
             snake.goto(x=screen_x_position, y=screen_y_position)
             screen_x_position -= 20
             self.segments += [snake]
+    
 
     # Making the snake move forwards automatically
     def move(self):
