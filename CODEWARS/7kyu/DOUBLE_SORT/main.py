@@ -13,8 +13,8 @@ def db_sort(text):
                 string += [element]
         except AttributeError:
             numbers += [element]
-
     
     return sorted(numbers) + sorted(string)
-print(db_sort(["Banana", "Orange", "Apple", "Mango", 0, 2, 2]))
 
+
+print(db_sort(["Banana", "Orange", "Apple", "Mango", 0, 2, 2]))
