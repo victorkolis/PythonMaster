@@ -10,5 +10,12 @@
 	- Mouse Click
 
 2. Update Game
+* Chaging things on the screen
+
+	- Collisions
+	
+	- Time running
+	
+	- Character movement
 
 3. Render
