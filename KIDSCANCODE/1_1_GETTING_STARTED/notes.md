@@ -1,5 +1,7 @@
 # UNDERSTANDING THE FUNDAMENTALS OF A GAME
 
+### GAME LOOP
+
 1. Process Input
 * Some external action:
 
