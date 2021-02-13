@@ -20,3 +20,11 @@
 
 3. Render
 * Drawing what happened in step 2
+
+
+### Drawing
+
+Double buffering:
+
+Drawing       ->   Display
+(back side)  Flip  (Front side)
