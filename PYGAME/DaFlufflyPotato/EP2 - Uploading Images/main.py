@@ -10,7 +10,7 @@ pygame.init()  # Initiates pygame
 
 pygame.display.set_caption('Simple Window')
 
-WINDOW_SIZE = (400, 400)
+WINDOW_SIZE = (1400, 1400)
 
 screen = pygame.display.set_mode(WINDOW_SIZE, 0, 32)  # Set/Initiate the window
 
