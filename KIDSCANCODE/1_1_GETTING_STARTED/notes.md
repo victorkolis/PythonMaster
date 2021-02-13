@@ -19,3 +19,4 @@
 	- Character movement
 
 3. Render
+* Drawing what happened in step 2
