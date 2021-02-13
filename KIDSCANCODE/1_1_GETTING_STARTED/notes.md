@@ -2,7 +2,9 @@
 
 1. Process Input
 * Some external action:
+
 	** Button Press
+
 	** Mouse Click
 
 2. Update Game
