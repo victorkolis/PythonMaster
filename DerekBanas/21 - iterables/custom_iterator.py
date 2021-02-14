@@ -23,4 +23,3 @@ class Alphabet:
 alpha = Alphabet()
 for letter in alpha:
 	print(letter)
-
