@@ -27,4 +27,5 @@
 Double buffering:
 
 Drawing       ->   Display
+
 (back side)  Flip  (Front side)

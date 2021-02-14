@@ -7,6 +7,7 @@ import sys
 import random
 from pygame.locals import *
 
+import random
 
 WIDTH, HEIGHT = 360, 480
 FPS = 24
@@ -19,6 +20,7 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 CYAN = (0, 255, 255)
 DARK_GRAY = (30, 30, 30)
+DARK_GRAY = (110, 110, 110)
 
 # Initializes pygame and create a window
 pygame.init()
@@ -42,3 +44,4 @@ while True:
 			
 	screen.fill(BLACK)
 	pygame.display.flip()
+	screen.fill(DARK_GRAY)
