@@ -3,14 +3,16 @@
 # Check whether it is possible to create s2 with letters in s1
 
 def scramble(s1, s2):
-	add2 = 0
-	add1 = 0
+	s2 = sorted(s2)
+	s1 = sorted(s1)
 	
 	for letter in s2:
-		if s2.count(letter) > s1.count(letter):
+		try:
+			s1.remove(letter)
+		except ValueError:
 			return False
-
+	
 	return True
-	
-	
-print(scramble('katas', 'steak'))
+
+
+print(scramble('cedewaraaossoqqyt', 'codewars'))
