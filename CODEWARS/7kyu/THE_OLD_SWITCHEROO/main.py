@@ -11,6 +11,4 @@ def vowel_2_index(string):
 	return new_string
 	
 	
-
-	
 print(vowel_2_index('sentence here'))
