@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# Validate whether the input is an IP
+
 def is_valid_IP(ip):
 	if ''.join(ip.split('.')).isalnum():
 		ip = [x for x in ip.split('.')]
