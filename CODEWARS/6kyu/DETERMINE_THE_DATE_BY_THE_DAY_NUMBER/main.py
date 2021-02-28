@@ -1,40 +1,29 @@
 #!/usr/bin/env python3
 
-def get_day(day, is_leap):
-	months = {
-		'Jan' or 'Mar': 31,
-		'May' or 'Jul': 31,
-		'Aug' or 'Oct': 31,
-		'December': 31,
-		
-		'Apr' or 'Jun': 30,
-		'Set' or 'Nov': 30,
-		
-		'Feb': 28,
-	}
+def get_day(days, is_leap): 
+	calendar = {
+		"January": 31,
+		"February": 28 + (1 if is_leap else 0),
+		"March": 31,
+		"April": 30,
+		"May": 31,
+		"June": 30,
+		"July": 31,
+		"August": 31,
+		"September": 30,
+		"October": 31,
+		"November": 30,
+		"December": 31
+		}
 	
-	if is_leap:
-		pass
-	else:
+	# Testing for months
+	for month in calendar:
+		if days <= calendar[month]:
+			return f'{month}, {days}'
 		
-		
-	
-	
-	
-print(get_day(41, False))
+		# Reducing the days
+		days -= calendar[month]
 
 
-"""
-Jan 31
-Feb 28
-Mar 31
-Apr 30
-May 31
-Jun 30
-Jul 31
-Aug 31
-Sep 30
-Oct 31
-Nov 30
-Dec 31
-"""
+	
+print(get_day(258, False))
