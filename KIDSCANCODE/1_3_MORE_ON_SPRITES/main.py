@@ -9,9 +9,11 @@ from pygame.locals import *
 
 WIDTH, HEIGHT = 720, 720
 FPS = 24
+character_speed = 2
 
 # Set up assets
 game_folder = os.path.dirname(__file__)
+img_folder = os.path.join(game_folder, 'img')  # The join makes the file readable in all OS
 
 # Common colors
 WHITE = (255, 255, 255)
@@ -27,13 +29,13 @@ class Player(pygame.sprite.Sprite):
 	# Sprite for the Player
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.Surface((50, 50))
-		self.image.fill(WHITE)
+		self.image = pygame.image.load(os.path.join(img_folder, 'head.png')).convert()
+		self.image.set_colorkey(BLACK)
 		self.rect = self.image.get_rect()
 		self.rect.center = (WIDTH * 0.5, HEIGHT * 0.5)
 	
 	def update(self):
-		self.rect.x += 20
+		self.rect.x += character_speed
 		if self.rect.left > WIDTH:
 			self.rect.right = 0
 
