@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# 300 Characters cannot be exceeded
+
 def baby_shark_lyrics():
 	p = ('Baby', 'Mommy', 'Daddy', 'Grandma', 'Grandpa')
 	a = 'Let\'s go hunt'

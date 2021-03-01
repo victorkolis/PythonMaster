@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# letters and its opposites are in a battle, the goal is to keep track of hits and who wins the battle
+
 def alphabet_war(fight):
 	left_side = {
 		'w': 4,
