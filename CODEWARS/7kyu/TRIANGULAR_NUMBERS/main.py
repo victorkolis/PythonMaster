@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-def triangular():
+def triangular(x):
 	
 	return True
 	
 	
-print(triangular())
+print(triangular(1))
