@@ -30,18 +30,29 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('GAME TITLE')
 clock = pygame.time.Clock()
 
+# SPRITES
+all_sprites = pygame.sprite.Group()
+
+# Game loop
 # Game loop
 while True:
 	# keeping the loop within the correct speed
 	clock.tick(FPS)
 	
-	# Process input (events)
+	# 1. Process input (events)
 	for event in pygame.event.get():
 		# check for window closure
 		if event.type == QUIT:
 			pygame.quit()
 			sys.exit()
 			
+	# 2. Update
+	sprites.update()
+	
+	# 3. Draw/Render
 	screen.fill(BLACK)
+	sprites.draw(screen)
+	
+	# Board
 	pygame.display.flip()
-	screen.fill(DARK_GRAY)
+	
