@@ -38,41 +38,50 @@ class Ship(pygame.sprite.Sprite):
 		self.rect = self.image.get_rect()
 		self.rect.centerx = WIDTH / 2
 		self.rect.bottom = HEIGHT - 20
-		self.speedx = 0
-		self.height = 0
+		self.speed_x = 0
+		self.speed_y = 0
 		
 	def update(self):
 		# Setting the speed aways to stopped
-		self.speedx = 0
-		self.height = 0
+		self.speed_x = 0
+		self.speed_y = 0
 		
 		# Getting a list of all the keys that are being held down
 		key_pressed = pygame.key.get_pressed()
 		
 		# Movin' sideways
 		if key_pressed[pygame.K_LEFT]:
-			self.speedx = -5
+			self.speed_x = -5
 		elif key_pressed[pygame.K_RIGHT]:
-			self.speedx = 5
+			self.speed_x = 5
 		
 		# Movin' up & down
 		if key_pressed[pygame.K_UP]:
 			# Increasing speed
 			if key_pressed[pygame.K_LSHIFT] or key_pressed[pygame.K_RSHIFT]:
-				self.height = -20
+				self.speed_y = -20
 			else:
-				self.height = -5
+				self.speed_y = -5
 		elif key_pressed[pygame.K_DOWN]:
-			self.height = 5
+			self.speed_y = 5
 		
-		self.rect.x += self.speedx
-		self.rect.y += self.height
+		self.rect.x += self.speed_x
+		self.rect.y += self.speed_y
 		
 		
 		# Collision detection
-		
+		# Side-walls
+		if self.rect.right > WIDTH:
+			self.rect.right = WIDTH
+		elif self.rect.left < 0:
+			self.rect.left = 0
 
-
+		# Ceiling-bottom
+		if self.rect.bottom > HEIGHT:
+			self.rect.bottom = HEIGHT
+		elif self.rect.top < 0:
+			self.rect.top = 0
+			
 # SPRITES
 sprites = pygame.sprite.Group()
 ship = Ship()
