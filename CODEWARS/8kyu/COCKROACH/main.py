@@ -12,5 +12,3 @@ def cockroach_speed(s: int or float) -> int:
 	
 
 print(cockroach_speed(1.08))
-
-
