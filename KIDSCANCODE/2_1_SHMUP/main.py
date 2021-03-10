@@ -10,7 +10,7 @@ from pygame.locals import *
 import random
 
 WIDTH, HEIGHT = 360, 480
-FPS = 24
+FPS = 60
 
 # Common colors
 WHITE = (255, 255, 255)
