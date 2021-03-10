@@ -47,11 +47,11 @@ while True:
 			sys.exit()
 			
 	# 2. Update
-	sprites.update()
+	all_sprites.update()
 	
 	# 3. Draw/Render
 	screen.fill(BLACK)
-	sprites.draw(screen)
+	all_sprites.draw(screen)
 	
 	# Board
 	pygame.display.flip()
